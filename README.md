@@ -30,3 +30,13 @@
 
 <hr>
 <hr>
+
+## Sum of Rows
+
+[Code](Prework-CodeChallenges/SumOfRows/Program.cs)
+
+#### Output :
+![OutputConsole](img/screenshot5.png)
+
+<hr>
+<hr>
