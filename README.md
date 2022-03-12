@@ -19,3 +19,14 @@
 
 <hr>
 <hr>
+
+## Perfect Sequence
+
+[Code](Prework-CodeChallenges/PerfectSequence/Program.cs)
+
+#### Output :
+![OutputConsole](img/screenshot3.png)
+![OutputConsole](img/screenshot4.png)
+
+<hr>
+<hr>
