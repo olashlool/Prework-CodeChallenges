@@ -19,25 +19,32 @@ namespace SumOfRows
             int m = int.Parse(Console.ReadLine());
             Console.Write("Enter the number of Columns: ");
             int n = int.Parse(Console.ReadLine());
-            string[,] two = new string[m, n];
+            int[,] arr = new int[m, n];
             //Console.WriteLine(two.GetLength(0)); 
             //Console.WriteLine(two.GetLength(1));
-          
-            int[,] arr = new int[3, 5] { 
-                                { 1, 2, 3, 4, 5 }, 
-                                { 6, 7, 8, 9, 10 }, 
-                                { 11, 12, 13, 14, 15 } 
-                                };
-
-
+            Random rnd = new Random();
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    arr[i, j] = rnd.Next(1, 15);
+                }
+            }
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write(arr[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
             int sum = 0;
-            for ( int i = 0; i < m; ++i)
+            for (int i = 0; i < m; ++i)
             {
                 for (int j = 0; j < n; ++j)
                 {
                     sum = sum + arr[i, j];
                 }
-
                 Console.WriteLine("Sum of the row " + i + " = " + sum);
                 sum = 0;
             }
